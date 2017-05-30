@@ -4,7 +4,27 @@ body{
 }
 *{
   box-sizing: border-box;
+  font-family: sans-serif;
 }
+
+.left-text p,
+.box-text p,
+.thesis-left-text p,
+#footer,
+h4,
+.box-text h3{
+  color: #6F6F6F;
+}
+
+a{
+  text-decoration: none;
+  font-size: 25px;
+}
+
+h1, h2, h3{
+  color: #444444;
+}
+
 header{
   display: flex;
   align-items: center;
@@ -13,8 +33,20 @@ header{
   height: 64px;
 }
 
+.first-part-logo{
+  font-weight: bold;
+  color: #444444;
+}
+
+.second-part-logo{
+  color: #6F6F6F;
+}
+
 .header-logo{
 display: flex;
+}
+.header-logo span{
+  font-size: 25px;
 }
 
 .mobile-logo{
@@ -25,12 +57,17 @@ display: flex;
   display: block;
 }
 
+.header-logo img{
+
+}
+
 #menu a{
   margin: 0px 8px;
   text-decoration: none;
+  color: #51514F;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 851px) {
   .header-logo{
     display: none;
   }
@@ -68,17 +105,31 @@ display: flex;
   justify-content: center;
 }
 
+.body-text h1{
+  font-size: 80px;
+  margin:0 auto;
+}
+
+.body-text h2{
+  font-size: 40px;
+}
+
+p span{
+  font-size: 20px;
+}
+
 .body-text span{
   display: flex;
   justify-content: center;
-  border: 1px solid grey;
-  background-color: grey;
-  padding: 8px;
+  border: 1px solid #51514F;
+  background-color: #51514F;
+  padding: 25px;
   margin-right: 50px;
-  line-height: 8px;
+  line-height: 15px;
+  color: white;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 1060px) {
   #body{
     flex-wrap: wrap;
   }
@@ -114,7 +165,7 @@ display: flex;
 }
 
 #idk .left{
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #F0F0F0;
   padding: 32px 24px;
 }
 
@@ -126,10 +177,12 @@ display: flex;
  padding-bottom: 24px;
  font-weight: bold;
  margin: 0px auto;
+ font-size: 50px;
 }
 
 .left-text p{
   margin: 0px auto;
+  font-size: 23px;
 }
 
 .left-image img{
@@ -154,20 +207,30 @@ padding-top: 16px;
   padding: 16px;
 }
 
+.right-box-text h3{
+  font-size: 25px;
+}
+
 .right-box-text h4{
   line-height: 8px;
+  font-weight: normal;
+}
+
+.right-box-text a{
+  color: #349bff;
+  font-size: 20px;
 }
 
 .special{
-  background-color: lightgrey;
+  background-color: #D9D9D9;
 }
 
 .campus{
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 964px) {
   .left{
     display: none;
   }
@@ -186,7 +249,7 @@ padding-top: 16px;
   }
 
   .right-box-img img{
-
+    height: auto;
   }
 
   .right-box-text{
@@ -209,7 +272,7 @@ padding-top: 16px;
 }
 
 #learning{
-  background-color: lightgrey;
+  background-color: #F0F0F0;
   padding-bottom: 32px;
 }
 
@@ -238,6 +301,11 @@ padding-top: 16px;
 
 .box-text h3{
   line-height: 8px;
+  font-weight: normal;
+}
+
+.box-text p{
+  font-size: 22px;
 }
 
 @media only screen and (max-width: 580px) {
@@ -290,10 +358,12 @@ padding-top: 16px;
   text-align: center;
   padding: 32px;
   margin: 0 auto;
+  font-size: 50px;
 }
 
 .thesis{
   display: flex;
+  border-bottom: 1px solid #D9D9D9;
 }
 
 .thesis-left{
@@ -302,7 +372,6 @@ padding-top: 16px;
 
 .thesis-left{
   width: 60%;
-  padding-bottom: 24px;
   padding-right: 16px;
 }
 
@@ -315,12 +384,14 @@ padding-top: 16px;
 
 .thesis-left-text h3{
   margin: 0px auto;
-  padding-bottom: 16px;
+  padding-bottom: 24px;
+  font-size: 30px;
 }
 
 .thesis-left-text p{
   margin: 0px auto;
   padding-bottom: 32px;
+  font-size: 23px;
 }
 
 .thesis-right{
@@ -330,6 +401,15 @@ padding-top: 16px;
 .thesis-info{
   display: flex;
   align-items: center;
+}
+
+.thesis-info-text h3{
+  font-size: 25px;
+}
+
+.thesis-info-text h4{
+  line-height: 8px;
+  font-weight: normal;
 }
 
 .grey{
@@ -345,7 +425,7 @@ padding-top: 16px;
   padding: 16px;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 1248px) {
   #thesis h1{
     border-top: 1px solid lightgrey;
   }
@@ -364,7 +444,11 @@ padding-top: 16px;
 #footer{
   display: flex;
   justify-content: space-between;
-  padding: 0px 24px;
+  padding: 18px 24px 56px 24px;
+}
+
+.left-footer{
+  word-spacing: 10px;
 }
 
 @media only screen and (max-width: 580px) {
