@@ -30,7 +30,7 @@ display: flex;
   text-decoration: none;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 580px) {
   .header-logo{
     display: none;
   }
@@ -78,7 +78,7 @@ display: flex;
   line-height: 8px;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 580px) {
   #body{
     flex-wrap: wrap;
   }
@@ -167,7 +167,7 @@ padding-top: 16px;
   border-bottom: 1px solid lightgrey;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 580px) {
   .left{
     display: none;
   }
@@ -240,7 +240,7 @@ padding-top: 16px;
   line-height: 8px;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 580px) {
   #learning{
     padding-bottom: 0px;
   }
@@ -345,7 +345,7 @@ padding-top: 16px;
   padding: 16px;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 580px) {
   #thesis h1{
     border-top: 1px solid lightgrey;
   }
@@ -367,7 +367,7 @@ padding-top: 16px;
   padding: 0px 24px;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 580px) {
   .left-footer{
     display: none;
   }
